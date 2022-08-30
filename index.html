@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/landing page.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/slider.css">
+    <link rel="stylesheet" media="screen and (max-width:1100px)"  href="css/phone.css">
+    <!-- <link rel="stylesheet" href="bollywood.css"> -->
+    <title>Document</title>
+    <script>
+        function myFunction() {
+            var x = document.getElementById("myLinks");
+            if (x.style.display === "block") {
+                x.style.display = "none";
+            } else {
+                x.style.display = "block";
+            }
+        }
+    </script>
+    <style>
+        .btnn {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .card {
+
+            margin: auto;
+        }
+
+        .card-items {
+            display: inline-flex;
+            justify-content: center;
+            flex-direction: column;
+            width: 28vw;
+            align-items: center;
+            margin: 30px 30px;
+            background-color: white;
+
+            overflow: hidden;
+        }
+
+        main {
+            background-color: rgb(229, 230, 232);
+        }
+
+        ;
+
+        @media (max-width:599px) {
+            .card-items {
+                /* display: grid; */
+                /* padding: 5px;
+       margin: 12px; */
+                /* margin-left: 10px; */
+                /* grid-template-columns: repeat(2, 2fr); */
+                width: 30vw;
+                margin: 20px 20px;
+
+            }
+
+            .card-items img {
+                height: 300%;
+                width: 500%;
+            }
+
+            .text {
+                font-size: small;
+            }
+
+            .card-items b {
+                font-size: small;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <main>
+        <header>
+            <nav class="desktop">
+                <ul class="navitems">
+                    <div class="left">
+                        <li><a href="Hindi.html">Hindi</a></li>
+                        <li><a href="Bollywood.html">Bollywood</a></li>
+                        <li><a href="Sports.html">Sports</a></li>
+                        <li><a href="Daily Affairs.html">Daily Affairs</a></li>
+                        <li><a href="International.html">International</a></li>
+                        <li><a href="Finance.html">Finance</a></li>
+                    </div>
+                    <div class="logo">
+                        <img src="img/whiteonblack.png" alt="" height="50vh" width="50vw">
+                    </div>
+                    <div class="right">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <!-- <li><a href="Contact.html">Contact</a></li> -->
+                    </div>
+                </ul>
+            </nav>
+        </header>
+        <div class="topnav">
+            <div class="logo">
+                <img src="img/whiteonblack.png" alt="" height="50vh" width="50vw">
+            </div>
+            <div id="myLinks">
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="Contact.html">Contact</a>
+                <a href="Hindi.html">Hindi</a>
+                <a href="Bollywood.html">Bollywood</a>
+                <a href="Sports.html">Sports</a>
+                <a href="Daily Affairs.html">Daily Affairs</a>
+                <a href="International.html">International</a>
+                <a href="Finance.html">Finance</a>
+            </div>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+            </a>
+        </div>
+
+
+
+
+
+        <!-- <div class="logo1">
+            <img src="black on trans.png" alt="">
+
+        </div> -->
+        <h1 class="name">Breaking News</h1>
+
+        <div class="slideshow-container">
+
+            <div class="mySlides fade">
+                <img src="img/lsc flop.webp" style="width:100%">
+
+            </div>
+
+            <div class="mySlides fade">
+                <img src="img/sharad pawar's party.webp" style="width:100%">
+            </div>
+
+            <div class="mySlides fade">
+                <img src="img/wipro says no to change in salary.webp" style="width:100%">
+            </div>
+
+            <a class="prev" onclick="plusSlides(-1)">❮</a>
+            <a class="next" onclick="plusSlides(1)">❯</a>
+
+        </div>
+
+        <!-- <div class="slider">
+            <img class="img1" src="lsc flop.webp" alt="" >
+        </div> -->
+        <main>
+            <script>
+                let slideIndex = 1;
+                showSlides(slideIndex);
+
+                function plusSlides(n) {
+                    showSlides(slideIndex += n);
+                }
+
+                function currentSlide(n) {
+                    showSlides(slideIndex = n);
+                }
+
+                function showSlides(n) {
+                    let i;
+                    let slides = document.getElementsByClassName("mySlides");
+                    let dots = document.getElementsByClassName("dot");
+                    if (n > slides.length) { slideIndex = 1 }
+                    if (n < 1) { slideIndex = slides.length }
+                    for (i = 0; i < slides.length; i++) {
+                        slides[i].style.display = "none";
+                    }
+                    for (i = 0; i < dots.length; i++) {
+                        dots[i].className = dots[i].className.replace(" active", "");
+                    }
+                    slides[slideIndex - 1].style.display = "block";
+                    dots[slideIndex - 1].className += " active";
+                }
+            </script>
+            <!-- <div class="container2">
+                <h2>Rate US</h2>
+                <input type="range" placeholder="Rate us">
+                </div> -->
+            <!-- <button>
+                    <input type="button">rate us
+                    <a href="rateus.html"></a>
+                </button> -->
+            <div class="container">
+                <div class="card">
+                    <h2 class="headingcenteredtext">ACHIEVEMENTS</h2>
+                    <div class="card-items">
+                        <img src="img/ach1.jpeg" alt="" height="200vh" width="200vw">
+
+
+
+                    </div>
+                    <div class="card-items">
+                        <img src="img/ach2.jpeg" alt="" height="200px" width="200px">
+
+                    </div>
+                    <div class="card-items">
+                        <img src="img/ach3.jpeg" alt="" height="200px" width="200px">
+
+
+
+                    </div>
+                </div>
+                <br>
+                <a class="btnn" href="rateus.html">
+                    <button type="button" class="btn btn-primary btn-lg">Rate US
+                    </button>
+                </a>
+                <br>
+                <footer class="flex-all-center">
+                    <p>
+                        Copyright &copy; Diilli Darbar Times.com
+                    </p>
+                </footer>
+</body>
+
+</html>

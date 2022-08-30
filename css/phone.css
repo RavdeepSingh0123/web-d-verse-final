@@ -1,0 +1,6 @@
+.card-items{
+   
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 350px;
+}

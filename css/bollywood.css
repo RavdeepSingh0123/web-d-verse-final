@@ -1,0 +1,18 @@
+.card{
+   
+    margin:auto;
+}
+.card-items{
+    display: inline-flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 15vw;
+    align-items: center;
+    margin: 30px 30px;
+    background-color: white;
+    
+    overflow: hidden;
+}
+main{
+    background-color: rgb(229, 230, 232);
+}
