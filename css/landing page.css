@@ -1,0 +1,173 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Paaji+2:wght@600&family=Karla&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+header {
+    background-color: black;
+    font-family: 'Karla', sans-serif;
+    display: flex;
+}
+
+.desktop {
+    display: flex;
+
+}
+
+.navitems {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+}
+
+.left,
+.right {
+    display: flex;
+    width: 100%;
+}
+
+.right {
+    justify-content: flex-end;
+}
+
+.desktop {
+    width: 100%;
+}
+
+/* .desktop ul {
+    height: 8vh;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+} */
+.desktop ul li {
+    list-style: none;
+    padding: 23px;
+
+}
+
+.desktop ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.desktop ul li a:hover {
+    font-weight: bolder;
+    color: brown;
+}
+
+/* .slider{
+    margin: 12px auto;
+    width: 66vw;
+    overflow: hidden; */
+
+.logo1 {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+
+h1.name {
+    position: relative;
+    left: 38%;
+    font: size 800%;
+    overflow: hidden;
+    margin: 5vh;
+}
+
+/* img.img1{
+    width: 65vw; */
+
+
+main {
+    overflow: hidden;
+}
+
+footer {
+    background-color: black;
+    height: 10vh;
+    color: white;
+    font-family: 'Karla', sans-serif;
+}
+
+.flex-all-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container2 {
+    background-color: white;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media(max-width: 799px) {
+    .mobile-container {
+        max-width: 480px;
+        margin: auto;
+        background-color: #555;
+        height: 500px;
+        color: white;
+        border-radius: 10px;
+    }
+
+    .topnav {
+        overflow: hidden;
+        background-color: #333;
+        position: relative;
+    }
+
+    .topnav #myLinks {
+        display: none;
+    }
+
+    .topnav a {
+        color: white;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 17px;
+        display: block;
+    }
+
+    .topnav a.icon {
+        background: black;
+        display: block;
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+
+    .topnav a:hover {
+        background-color: #ddd;
+        color: black;
+    }
+
+    .active {
+        background-color: #04AA6D;
+        color: white;
+    }
+
+    .desktop {
+        display: none;
+    }
+
+    h1.name {
+        position: relative;
+        left: 5%;
+        font: size 50%;
+        overflow: hidden;
+        margin: 5vh;
+
+    }
+}
+
+@media(min-width: 799px) {
+    .topnav {
+        display: none;
+    }
+}

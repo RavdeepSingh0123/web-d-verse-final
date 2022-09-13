@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" media="screen and (max-width:1100px)"  href="css/phone.css">
+    <script>
+        function myFunction() {
+          var x = document.getElementById("myLinks");
+          if (x.style.display === "block") {
+            x.style.display = "none";
+          } else {
+            x.style.display = "block";
+          }
+        }
+    </script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Baloo+Paaji+2:wght@600&family=Karla&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+header {
+    background-color: white;
+    font-family: 'Karla', sans-serif;
+    display: flex;
+}
+
+nav {
+    display: flex;
+
+}
+
+.desktop {
+    display: flex;
+
+}
+
+.navitems {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+}
+
+.left,
+.right {
+    display: flex;
+    width: 100%;
+}
+
+.right {
+    justify-content: flex-end;
+}
+
+.desktop {
+    width: 100%;
+}
+
+/* .desktop ul {
+    height: 8vh;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+} */
+.desktop ul li {
+    list-style: none;
+    padding: 23px;
+
+}
+
+.desktop ul li a {
+    color: black;
+    text-decoration: none;
+}
+
+.desktop ul li a:hover {
+    font-weight: bolder;
+    color: brown;
+}
+
+/* .slider{
+    margin: 12px auto;
+    width: 66vw;
+    overflow: hidden; */
+
+.logo1{
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+h1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+.intro li h1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+
+}
+main{
+    background-color: black;
+}
+.mohan{
+    display: block;
+  margin-left: 41%;
+  margin-right: auto;
+}
+.mohantext{
+    color: white;
+}
+@media(max-width: 799px) {
+    .mobile-container {
+        max-width: 480px;
+        margin: auto;
+        background-color: #555;
+        height: 500px;
+        color: white;
+        border-radius: 10px;
+    }
+
+    .topnav {
+        overflow: hidden;
+        background-color: #333;
+        position: relative;
+    }
+
+    .topnav #myLinks {
+        display: none;
+    }
+
+    .topnav a {
+        color: white;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 17px;
+        display: block;
+    }
+
+    .topnav a.icon {
+        background: black;
+        display: block;
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+
+    .topnav a:hover {
+        background-color: #ddd;
+        color: black;
+    }
+
+    .active {
+        background-color: #04AA6D;
+        color: white;
+    }
+
+    .desktop {
+        display: none;
+    }
+
+    /* h1.name {
+        position: relative;
+        left: 5%;
+        font: size 50%;
+        overflow: hidden;
+        margin: 5vh; */
+
+    }
+
+
+@media(min-width: 799px) {
+    .topnav {
+        display: none;
+    }
+}
+</style>
+</head>
+
+<body>
+    <main>
+        <header>
+            <nav class="desktop">
+                <ul class="navitems">
+                    <div class="left"><li><a href="Hindi.html">Hindi</a></li>
+                        <li><a href="Bollywood.html">Bollywood</a></li>
+                        <li><a href="Sports.html">Sports</a></li>
+                        <li><a href="Daily Affairs.html">Daily Affairs</a></li>
+                        <li><a href="International.html">International</a></li>
+                        <li><a href="Finance.html">Finance</a></li>
+                    </div>
+                    <div class="logo">
+                        <img src="img/blackonwhite.png" alt="" height="50vh" width="50vw">
+                    </div>
+                    <div class="right"><li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="Contact.html">Contact</a></li>
+                    </div>
+                </ul>
+            </nav>
+        </header>
+        <div class="topnav">
+            <div class="logo">
+                <img src="img/whiteonblack.png" alt="" height="50vh" width="50vw">
+            </div>
+            <div id="myLinks">
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <!-- <a href="Contact.html">Contact</a> -->
+                <a href="Hindi.html">Hindi</a>
+               <a href="Bollywood.html">Bollywood</a>
+               <a href="Sports.html">Sports</a>
+               <a href="Daily Affairs.html">Daily Affairs</a>
+               <a href="International.html">International</a>
+               <a href="Finance.html">Finance</a>
+            </div>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+              <i class="fa fa-bars"></i>
+            </a>
+          </div>
+        <div class="logo1">
+            <img src="img/whiteonblack.png" alt="">
+        </div>
+        <div class="intro">
+            <li><h1>Company Key Persons:</h1></li>
+            <!-- <li><h3>Mr Mohan Kumar - Founder:</h3></li>
+            <li><h3>Mr Rohan Thakur - Senior Editor</h3></li>
+            <li><h3>Mr Raghav Chadha - PR Head</h3></li> -->
+        </div> <br><br><br>
+        <div class="mohan">
+            <img src="img/mohan.jpeg" alt="" height="30%" width="30%">
+        </div>
+        <div class="mohantext">
+            <h3>Mr Mohan Kumar</h3>
+            <p>Founder of Diilli Darbar Times.
+                My family has been in this business for the last 75years. At the dawn of the midnight,
+                when everyone used to sleep, My great grandfather used to go on his bicycle to get newspapers for everyone.
+                Carrying forward his legacy, I have established Info Times - The newspaper that keeps 10 thousands people updated every day.</p>
+        </div>
+        <div class="mohan">
+            <img src="img/rohan.jpeg" alt="" height="30%" width="30%">
+        </div>
+        <div class="mohantext">
+            <h3>Mr Rohan Thakur</h3>
+            <p>Senior editor
+                I have spent a large part of my career understanding the audience and
+                how to reach out to them.</p>
+        </div>
+        </div>
